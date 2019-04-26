@@ -6,7 +6,9 @@ function getShape() {
     alert("Equilateral Trianle!!");
   } else if (base === leftLeg || base === rightLeg || leftLeg === rightLeg) {
     alert("Isosceles Triangle!!");
-  } else if (base + leftLeg) {
-
+  } else if ((base + leftLeg) <= rightLeg || (base + rightLeg) <= leftLeg || (leftLeg + rightLeg) <= base) {
+    alert("Not a Triangle!!");
+  } else {
+    alert("scalene Triange!!");
   }
 }
