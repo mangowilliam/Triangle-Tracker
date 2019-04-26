@@ -12,4 +12,3 @@ function getShape() {
     alert("scalene Triange!!");
   }
 }
-getShape();
