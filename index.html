@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Triangle-tracker</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="public/scripts/scripts.js">
@@ -46,16 +47,15 @@
       our projects determines if the values input by the user are of shape tringle
       and the which type of triangle they form.
     </p>
-    <div class="form">
+    <form action="index.html" method="post">
       <label for="base">Give base length:</label><br />
       <input class="number" type="text" id="base" name="base"><br>
       <label for="leftLeg">Give leftside length:</label><br />
       <input id="lefttLeg" type="text" class="number" name="leftLeg"><br>
       <label for="rightLeg">give rightside length:</label><br />
-      <input id="rightLeg" type="text" name="rightLeg" class="number">
-    </div>
-    <input class="button" type="button" value="Find Out" onclick="getShape()">
-    <input class="button" type="button" value="Reset" onclick="reset()">
+      <input id="rightLeg" type="text" name="rightLeg" class="number"><br />
+      <input class="button" type="button" value="Find Out" onclick="getShape()">
+      <input class="button" type="reset" value="startover" onclick="reset()" />
     </form>
   </div>
 </body>
