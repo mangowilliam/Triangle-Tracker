@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <h1>TRIANGLE TRACKER PROJECT</h1>
     <h2>Triangles</h2>
     <figure>
@@ -46,11 +46,19 @@
       our projects determines if the values input by the user are of shape tringle
       and the which type of triangle they form.
     </p>
-    <script src="js/scripts.js"></script>
-  </div>
-  <div class="wrapper">
-    <button type="button" onclick="getShape()">determine your shape</button>
+    <div class="form">
+      <label for="base">Give base length:</label><br />
+      <input class="number" type="text" id="base" name="base"><br>
+      <label for="leftLeg">Give leftside length:</label><br />
+      <input id="lefttLeg" type="text" class="number" name="leftLeg"><br>
+      <label for="rightLeg">give rightside length:</label><br />
+      <input id="rightLeg" type="text" name="rightLeg" class="number">
+    </div>
+    <input class="button" type="button" value="Find Out" onclick="getShape()">
+    <input class="button" type="button" value="Reset" onclick="reset()">
+    </form>
   </div>
 </body>
+<script src="js/scripts.js"></script>
 
 </html>
