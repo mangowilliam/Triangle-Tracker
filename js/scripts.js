@@ -1,7 +1,13 @@
 function getShape() {
-  var base = parseInt(prompt("enter the value of the side facing downwards"));
-  var leftLeg = parseInt(prompt("enter the value of the left side "));
-  var rightLeg = parseInt(prompt("enter the value of the right side"));
+  var side = []
+  side.push(document.getElementById("base").value);
+  side.push(document.getElementById("leftLeg").value);
+  side.push(document.getElementById("rightLeg").value);
+
+  var base = side[0]
+  var leftLeg = side[1]
+  var rightLeg = side[2]
+
   if (isNaN(base) || isNaN(leftLeg) || isNaN(rightLeg)) {
     alert("error");
   } else if (base === leftLeg && leftLeg === rightLeg) {
@@ -16,3 +22,5 @@ function getShape() {
     alert("");
   }
 }
+$(document).ready(getShape() {
+      $("form").submit(getShape(vent) {
