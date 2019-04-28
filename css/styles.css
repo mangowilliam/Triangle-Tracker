@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  color: blue;
+  color: red;
 }
 
 p, h2 {
@@ -12,5 +12,9 @@ body {
 }
 
 .info-form {
+  width: 200px;
+  height: 100px;
+  border: 2px solid red;
+  box-sizing: border-box;
   text-align: center;
 }
