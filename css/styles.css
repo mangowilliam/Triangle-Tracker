@@ -3,9 +3,14 @@ h1 {
   color: blue;
 }
 
-p {
+p, h2 {
   text-align: center;
 }
 
 body {
   background-color: green;
+}
+
+.info-form {
+  text-align: center;
+}
