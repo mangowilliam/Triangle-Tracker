@@ -1,34 +1,23 @@
-function getShape() {
-  var side = [] //create an array
-  side.push(document.getElementById("base").value);
-  side.push(document.getElementById("leftLeg").value);
-  side.push(document.getElementById("rightLeg").value);
+function tringle() {
+  var edges = [] //create an array
+  edges.push(document.getElementById("base").value);
+  edges.push(document.getElementById("leftLeg").value);
+  edges.push(document.getElementById("rightLeg").value);
   //push side into array
-  var [b, l, r] = side //assign
-  var output = document.getElementById(output);
-  if (b.length === 0 || l.length === 0 || r.length === 0) {
-    output.innerHTML = ("insert your values")
-  } else {
-    b = parseInt(b);
-    l = parseInt(l);
-    r = parseInt(r);
-    findIf(b, l, r);
-  }
-}
+  var base = edges[0]
+  var leftLeg = edges[1]
+  var rightLeg = edges[2]
 
-function findIf(b, l, r) {
-  if (b === l && l === r) {
+  if (base === leftLeg && leftLeg === rightLeg) {
     output.innerHTML = ("Equilateral Triangele!!")
-  } else if (b === l || base === r || l === r) {
+  } else if (base === leftLeg || base === rightLeg || leftLeg === rightLeg) {
     output.innerHTML = ("Isosceles Triangle!!")
-  } else if ((b + l) <= r || (b + r) <= l || (l + r) <= b) {
+  } else if ((base + leftLeg) <= rightLeg || (base + rightLeg) <= leftLeg || (leftLeg + rightLeg) <= base) {
     output.innerHTML = ("Not a Triangle!!")
-  } else if (b != l && b != r) {
+  } else if (base != leftLeg && base != rightLeg) {
     output.innerHTML = ("scalene Triange!!")
-  } else if (isNan(b) || isNan(l) || isNan(r)) {
+  } else if (isNan(base) || isNan(leftLeg) || isNan(rightLeg)) {
     output.innerHTML = ("not a number")
-  } else {
-    output.innerHTML = //("do nothing")
   }
 }
 
