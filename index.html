@@ -3,7 +3,35 @@
 
 <head>
   <title>Triangle tracker</title>
+  <!--<script src="js/scripts.js" type="text"></script><-->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script>
+    function triangle_tracking() {
+      var base = parseInt(document.getElementById("b").value);
+      var leftleg = parseInt(document.getElementById("l").value);
+      var rightleg = parseInt(document.getElementById("r").value);
+      var triangles = [];
+      triangles.push(base);
+      triangles.push(leftleg);
+      triangles.push(rightleg);
+      if ((base === leftleg) && (leftleg === rightleg)) {
+        //document.getElementById("output").innerHTML("Equilateral Triangele!!")
+        window.alert("This is an Equilateral triangle");
+      } else if (base === leftleg && base !== rightleg || base === rightleg && base !== leftleg || leftleg === rightleg && leftleg !== base) {
+        //document.getElementById("output").innerHTML = ("Isosceles Triangle!!")
+        window.alert("This is an Isosceles triangle");
+      } else if ((base + leftleg) <= rightleg || (base + rightleg) <= leftleg || (leftleg + rightleg) <= base) {
+        //document.getElementById("output").innerHTML = ("Not a Triangle!!")
+        window.alert("This is not a triangle");
+      } else if (base !== leftleg && base !== rightleg) {
+        //document.getElementById("output").innerHTML = ("scalene Triange!!")
+        window.alert("This is a scalene triangle");
+      } else {
+        //document.getElementById("output").innerHTML = ("nothing")
+        window.alert("Invalid input");
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -26,18 +54,10 @@
       and the which type of triangle they form.
     </p>
     <form action="triangle_tracking">
-      <div class="form-group">
-        <input id="b" type="number" class="form-controltext-center" placeholder="enter base length in m" required></input><br>
-      </div>
-      <div class="form-group">
-        <input id="l" type="number" placeholder="enter leftLeg length in m" required></input><br>
-      </div>
-      <div class="form-group">
-        <input id="r" type="number" placeholder="enter rightLeg length in m" required></input><br>
-      </div>
-      <div class="form-group">
-        <button type="button" id="submit" onclick="triangle_tracking();">findOut</button>
-      </div>
+      <input id="b" type="number" placeholder="enter base length in m" required></input><br>
+      <input id="l" type="number" placeholder="enter leftleg length in m" required></input><br>
+      <input id="r" type="number" placeholder="enter rightleg length in m" required></input><br>
+      <button type="button" id="submit" onclick="triangle_tracking()">findOut</button>
     </form>
     <div class="output">
       <p id="output"></p>
@@ -60,7 +80,7 @@
       any two sides of the triangle must be greater than the third side.
       Equivalently, it has all angles of different measure.</dd>
   </dl>
-  <script src="js/js/scripts.js" type="text"></script>
+  <!--<script src="js/scripts.js" type="text"></script><--->
 </body>
 
 </html>
