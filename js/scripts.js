@@ -1,7 +1,7 @@
-var tringle_tracking = function(base, leftleg, rightleg) {
+var triangle_tracking = function(base, leftleg, rightleg) {
     var base = parseInt(document.getElementById("b").value);
     var leftleg = parseInt(document.getElementById("l").value);
-    var.rightleg = parseInt(document.getElementById("r").value);
+    var rightleg = parseInt(document.getElementById("r").value);
 
     var triangles = [];
     triangles.push(base);

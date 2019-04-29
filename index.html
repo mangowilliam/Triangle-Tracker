@@ -25,7 +25,7 @@
       my project determines if the values input by the user are of shape tringle
       and the which type of triangle they form.
     </p>
-    <div class="info-form">
+    <form action="triangle_tracking">
       <div class="form-group">
         <input id="b" type="number" class="form-controltext-center" placeholder="enter base length in m" required></input><br>
       </div>
@@ -36,31 +36,31 @@
         <input id="r" type="number" placeholder="enter rightLeg length in m" required></input><br>
       </div>
       <div class="form-group">
-        <button type="button" id="submit" onclick="tringle_tracking();">findOut</button>
+        <button type="button" id="submit" onclick="triangle_tracking();">findOut</button>
       </div>
-      </form>
-      <div class="output">
-        <p id="output"></p>
-      </div>
+    </form>
+    <div class="output">
+      <p id="output"></p>
     </div>
-    <br>
-    <br>
-    <p>Types of triangles</p>
-    <dl>
-      <dt>isosceles</dt>
-      <dd>- For an isosceles triangle, two sides are exactly equal.
-        Also, has two angles of the same measure, namely the angles opposite
-        to the two sides of the same length. he equal sides are called legs and
-        the third side is called the base.</dd>
-      <dt>equilateral</dt>
-      <dd>-or an equilateral triangle, all sides must be equal.
-        It's also a regular polygon with all angles measuring 60°.</dd>
-      <dt>scalene</dt>
-      <dd>For a scalene triangle, none of the sides is equal. However, the sum of
-        any two sides of the triangle must be greater than the third side.
-        Equivalently, it has all angles of different measure.</dd>
-    </dl>
-    <script src="js/js/scripts.js" type="text"></script>
+  </div>
+  <br>
+  <br>
+  <p>Types of triangles</p>
+  <dl>
+    <dt>isosceles</dt>
+    <dd>- For an isosceles triangle, two sides are exactly equal.
+      Also, has two angles of the same measure, namely the angles opposite
+      to the two sides of the same length. he equal sides are called legs and
+      the third side is called the base.</dd>
+    <dt>equilateral</dt>
+    <dd>-or an equilateral triangle, all sides must be equal.
+      It's also a regular polygon with all angles measuring 60°.</dd>
+    <dt>scalene</dt>
+    <dd>For a scalene triangle, none of the sides is equal. However, the sum of
+      any two sides of the triangle must be greater than the third side.
+      Equivalently, it has all angles of different measure.</dd>
+  </dl>
+  <script src="js/js/scripts.js" type="text"></script>
 </body>
 
 </html>
