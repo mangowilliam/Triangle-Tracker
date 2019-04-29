@@ -14,7 +14,9 @@
       triangles.push(base);
       triangles.push(leftleg);
       triangles.push(rightleg);
-      if ((base === leftleg) && (leftleg === rightleg)) {
+      if (isNaN(base) || isNaN(leftleg) || isNaN(rightleg)) {
+        window.alert("ERROR!! enter your values");
+      } else if ((base === leftleg) && (leftleg === rightleg)) {
         //document.getElementById("output").innerHTML("Equilateral Triangele!!")
         window.alert("This is an Equilateral triangle");
       } else if (base === leftleg && base !== rightleg || base === rightleg && base !== leftleg || leftleg === rightleg && leftleg !== base) {
@@ -34,7 +36,7 @@
   </script>
 </head>
 
-<body>
+<body background="images/travel.jpg">
   <div class=container>
     <h1>TRIANGLE TRACKER PROJECT</h1>
     <h2>Triangles</h2>
@@ -61,15 +63,10 @@
         <button type="button" id="submit" onclick="triangle_tracking()">findOut</button>
         <input type="reset" value="refresh" />
       </form>
-      <div>
-
-      </div>
       <div class="output">
         <p id="output"></p>
       </div>
     </div>
-    <br>
-    <br>
     <p>Types of triangles</p>
     <dl>
       <dt>isosceles</dt>
@@ -85,6 +82,9 @@
         any two sides of the triangle must be greater than the third side.
         Equivalently, it has all angles of different measure.</dd>
     </dl>
+    <footer>
+      <p>copyright@2019 mango.edu</p>
+    </footer>
     <!--<script src="js/scripts.js" type="text"></script><--->
 </body>
 
