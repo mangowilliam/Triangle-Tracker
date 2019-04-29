@@ -6,10 +6,9 @@ This project is a triangle tracker that prompts the user to input three dimensio
 ## Setup/Installation Requirements
 you can access through this link; https://mangowilliam.github.io/Triangle-Tracker/
 and this are the expected working states
-on a we browser and an internet connection
-/input of three equal values	/7,7,7	/equilateral triangle
-/input of two equal values	/7,8,7	/isosceles triangle
-/input of three different values	/3,4,5	/scalene triangle
+input of three equal values	7,7,7	equilateral triangle
+input of two equal values	7,8,7	isosceles triangle
+input of three different values	3,4,5	scalene triangle
 ## Known Bugs
 So far no identified bugs but if you get any contact me on 0702658317
 ## Technologies Used
