@@ -5,15 +5,15 @@
 This project is a triangle tracker that prompts the user to input three dimensions of their choice and the website decides on what type of a triangle it is by going through logical conditions in its js file and alerting the using of what type of triangle it is.
 ## Setup/Installation Requirements
 you can access through this link; https://mangowilliam.github.io/Triangle-Tracker/
-and this are the expected working states
-## BDD
-on a we browser and an internet connection
+and this are the expected working stateson a we browser and an internet connection
+### BDD
 |behavior|values|output|
-|input of three equal values	|4,4,4	|equilateral triangle|
-|input of two equal values	|7,8,7	|isosceles triangle|
-|input of three different values	|3,4,5	|scalene triangle|
-|input three ambiguous values |1.8,2 |not a triangle|
-|input no values  | |ERROR|
+|---------------------------------|---------|--------------------|
+|input of three equal values	    |4,4,4	  |equilateral triangle|
+|input of two equal values	      |7,8,7	  |isosceles triangle  |
+|input of three different values	|3,4,5	  |scalene triangle    |
+|input three ambiguous values     |1.8,2    |not a triangle      |
+|input no values                  |         |ERROR               |
 ## Known Bugs
 So far no identified bugs but if you get any contact me on 0702658317
 ## Technologies Used
